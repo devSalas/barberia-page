@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+  </head>
+
+
+
+  <body>
+    <div id="app"></div>
+    <header class='grid items-center  z-1 w-full bg-cover bg-size bg-center h-screen bg-[url("../public/fondoPrincipal.png")]  overflow-hidden  text-white'>
+      <div>
+
+        <div class="text-center">
+          Boardrom shop
+        </div>
+  
+        <div class="text-center">
+          <h1 class="text-3xl">Relax, Look Great, Feel Confident</h1>
+          <p class="text-sm sm:text-xl max-w-md m-auto my-8 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eos, placeat magni voluptatum </p>
+        </div>
+  
+        <div class="text-center">
+          <button class=" text-sm sm:text-xl font-bold border-2 p-2 px-4 text-yellow-900  bg-yellow-500">Servicios</button>
+          <button class=" ml-4 text-sm sm:text-xl font-bold border-2 p-2 border-yellow-500 text-yellow-500">Contactanos</button>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- Nav- la barra de navegacion -->
+
+    <nav class='navDesktop hidden sm:block backdrop-blur-md fixed z-10 top-0 inset-x-0 h-16 text-white '>
+
+      <div class="m-auto px-4 h-full flex items-center   justify-between max-w-7xl">
+
+        <div>
+          boardroom shop
+        </div>
+        <div>
+          <a href='#acerca' class='m-4 text-lg transition duration-150 ease-out hover:text-yellow-500'>Acerca</a>
+          <a href='#servicios' class='m-4 text-lg transition duration-150 ease-out hover:text-yellow-500'>Servicios</a>
+          <a href='#ubicacion' class='m-4 text-lg transition duration-150 ease-out hover:text-yellow-500'>Ubicación</a>
+        </div>
+        <div>
+          <button  class="border-2 p-1 px-2  bg-yellow-900 border-yellow-500"> 927 859 435</button>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Nav:mobile  -->
+    <div class=" absolute top-0 right-2 sm:hidden  navMobile backdrop-blur-md p-1 rounded-full ">
+      <img class="btnOpenMobile" src="menu.svg" alt="">
+    </div>
+
+    <!-- MENU mobile -->
+    <div class="hidden menuMobile fixed inset-0 sm:hidden   bg-slate-100  z-10 flex justify-center flex-col items-center font-bold text-2xl text-yellow-500  ">
+      <div class="absolute top-0 right-2 p-10">
+        <!-- <img src="close.svg" alt=""> -->
+        <svg class="btnCloseMenu text-yellow-900 hover:text-yellow-400 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+      </div>
+      <a href="#acerca" class="p-10 w-full text-center hover:bg-yellow-700 hover:text-white cursor-pointer">
+        Nosotros
+      </a>
+      <a href="#servicios" class="p-10 w-full text-center hover:bg-yellow-700 hover:text-white cursor-pointer">
+        Servicios
+      </a>
+      <a href="#ubicacion" class="p-10 w-full text-center hover:bg-yellow-700 hover:text-white cursor-pointer">
+        Ubicación
+      </a>
+    </div>
+
+     <!-- seccion : acerca -> descripcion de nosostros -->
+
+      <section id="acerca" class="h-screen w-full grid place-content-center px-3">
+      <!--   <div class=""> -->
+          <div>
+            <div class="h-8 w-1 bg-yellow-500 m-auto"></div>
+          </div>
+          <div class="italic m-auto">
+            Boadroom
+          </div>
+          <h2 class="m-auto font-bold my-4 text-xl">
+            Bienvenido a Nuestra Barberia
+          </h2>
+          <p class="m-auto max-w-md text-justify text-sm sm:text-xl p-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos delectus dolor nesciunt itaque cupiditate. At quos molestiae impedit animi, velit mollitia nulla expedita adipisci, harum assumenda, est ea a tenetur.
+          </p>
+          <img class="m-auto" src="herramientasImg.webp" alt="">
+         
+     <!--    </div> -->
+        
+          
+      </section>
+
+      <section id="servicios" class="w-full px-3 sm:h-screen grid place-content-center  py-4 ">
+        <div>
+          <h2 class="text-yellow-500 font-bold text-2xl text-center m-8">Servicios</h2>
+          <h3 class="text-center text-xl py-4">Ofrecemos una variedad de servicios al cuidado de su cabello</h3>
+          <div>
+            <li class="text-xl">Corte de Barba</li>
+              <li class="text-xl">Taper Fade</li>
+              <li class="text-xl">Mid Fade</li>
+              <li class="text-xl">Low Fade</li>
+              <li class="text-xl">High Fade</li>
+            <li class="text-xl">y muchos mas....</li>
+           </div>
+           <div class="grid  md:grid-cols-4 grid-cols-2 max-w-xl my-6 m-auto gap-3 place-content-center">
+            
+            <img class="w-32 m-auto" src="corte1.webp" alt="">
+        
+          
+            <img class="w-32 m-auto" src="corte2.webp" alt="">
+          
+            <img class="w-32 m-auto" src="corte3.webp" alt="">
+          
+            <img class="w-32 h-32 m-auto" class="" src="corte4.webp" alt="">
+         
+        </div>
+        </div>
+
+        <!-- <div class="grid md:w-full md:px-4  lg:gap-6 sm:grid-cols-1 sm:w-96 md:grid-cols-2 px-2  lg:grid-cols-3 gap-2 max-w-6xl m-auto bg-green-200  ">
+
+          <div class="bg-red-500 border-2 border-black p-1 max-w-2xl    sm:aspect-[9/10] ">
+            <img class="h-3/6 m-auto" src="corte1.webp" alt="">
+            <p class="h-3/6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed distinctio similique possimus est odio nesciunt illo dolores asperiores eveniet quia sint commodi repudiandae, molestiae ut sit officia impedit veniam minima.</p>
+          </div>
+
+          <div class=" bg-red-500 border-2 border-black p-1 max-w-2xl min-w-minimo sm:aspect-[9/10] ">
+            <img class="h-3/6 m-auto" src="corte1.webp" alt="">
+            <p class="h-3/6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed distinctio similique possimus est odio nesciunt illo dolores asperiores eveniet quia sint commodi repudiandae, molestiae ut sit officia impedit veniam minima.</p>
+          </div>
+          <div class="hidden lg:block bg-red-500 border-2 border-black p-1 max-w-2xl sm:aspect-[9/10] ">
+            <img class="h-3/6 m-auto" src="corte1.webp" alt="">
+            <p class="h-3/6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed distinctio similique possimus est odio nesciunt illo dolores asperiores eveniet quia sint commodi repudiandae, molestiae ut sit officia impedit veniam minima.</p>
+          </div>
+
+        </div> -->
+<!--         <div class="flex justify-center items-center" >
+          <img src="arrow-left-circle.svg" alt="">
+          <img src="arrow-right-circle.svg" alt="">
+        </div> -->
+
+        
+
+      </section>
+
+
+
+      <div id="ubicacion" class="h-screen w-full m-auto p-2 ">
+
+        <h2 class="text-yellow-500 font-bold text-2xl text-center m-4">Ubicación</h2>
+        <div class="max-w-4xl m-auto h-3/4">
+          <iframe class="max-w-4xl h-full p-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3347585607817!2d-76.9919834270982!3d-12.112327736871238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7714754eadf%3A0x8f9cf38aa35f6c03!2sPeluquer%C3%ADa%20Chacarilla!5e0!3m2!1sen!2spe!4v1672107670274!5m2!1sen!2spe"   width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       
+      </div>
+
+      <footer class=" bg-zinc-900 text-white flex flex-col sm:flex-row sm:justify-center p-10 sm:gap-40">
+        <div class=" m-auto  pb-5">
+          <h3  class="font-bold text-2xl sm:py-2">Dirección</h3>
+           <p>San Juan de Miraflores</p>
+        </div>
+        <div class="m-auto">
+          <h3 class="font-bold text-2xl py-2 ">Hora de Atención</h3>
+          <ul>
+            <li><span>lun:</span> Cerrado</li>
+            <li> mar:	15:00–22:00</li>
+            <li>mié:	9:00–17:00</li>
+            <li>jue:	9:00–17:00</li>
+            <li>vie:	15:00–22:00</li>
+            <li>sáb:	15:00–22:00</li>
+            <li>dom:	15:00–22:00</li>         
+          </ul>
+        </div>
+      </footer>
+
+
+    </section>
+
+    
+    <script type="module"  type="module" src="/main.js"></script>
+  </body>
+</html>
