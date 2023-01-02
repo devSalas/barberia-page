@@ -11,6 +11,9 @@ module.exports = {
       },
       minWidth: {
         'minimo': '300px',
+      },
+      gridTemplateRows: {
+        'rowSlider': '1fr 50px',
       }
     },
   },

@@ -7,11 +7,9 @@ const colorNav = () => {
 
   window.addEventListener("scroll",e=>{
     if(window.innerHeight-100 <window.scrollY){
-      console.log(window.scrollY)
       $nav.classList.add("bg-black")
     }
     if(window.innerHeight-100>window.scrollY){
-      console.log(window.scrollY)
       $nav.classList.remove("bg-black")
     }
   })
