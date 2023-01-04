@@ -14,7 +14,10 @@ module.exports = {
       },
       gridTemplateRows: {
         'rowSlider': '1fr 50px',
-      }
+      },
+      backgroundImage: {
+        'header': "url('./fondoPrincipal.png')",
+      },
     },
   },
   plugins: [],
