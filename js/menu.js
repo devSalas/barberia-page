@@ -13,7 +13,7 @@ const menu = () => {
 
 
   d.addEventListener("click",e=>{
-
+    console.log(e.target)
   if(e.target.matches(".ubicacion")| e.target.matches(".servicios") |e.target.matches(".acerca") ) {
 
     $menuMobile.classList.add("hidden")
@@ -26,9 +26,10 @@ const menu = () => {
 
     $menuMobile.classList.remove("hidden")
   }
-  if(e.target === $btnClose){
-
+  if(e.target === $btnClose || e.target.matches(`.${$btnClose} *`)){
+    
     $menuMobile.classList.add("hidden")
+
 
   }
 

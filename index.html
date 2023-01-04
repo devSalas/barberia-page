@@ -18,21 +18,21 @@
       list-style-position: inside;
       height: auto;
     }
- /*   ul li::marker {
-    color: red;
-    width: 10px;
-} */
+    .btnCloseMenu * {
+      display: hidden;
+    }
   </style>
 
 
 
   <body>
     <div id="app"></div>
-    <header class='grid items-center  z-1 w-full bg-cover bg-size bg-center h-screen bg-header  overflow-hidden  text-white'>
+    <header class=' relative grid items-center  z-1 w-full bg-cover bg-size bg-center h-screen  overflow-hidden  text-white'>
+      <img src="fondoMain.png" class="absolute inset-0 -z-10 h-screen w-full object-cover" alt="">
       <div>
 
         <div class="text-center text-xl TEXT-  m-4 text-yellow-500">
-          PELUQUERIA - BARBERIA
+          PELUQUERIA - SPA
         </div>
   
         <div class="text-center">
@@ -55,7 +55,7 @@
       <div class="m-auto px-4 h-full flex items-center   justify-between max-w-7xl">
 
         <div class=" text-2xl">
-          <a href="">KATY</a> <sub class="text-yellow-500 text-sm">peluqueria-barberia</sub>
+          <a href="">KATY</a> <sub class="text-yellow-500 text-sm">peluqueria-Spa</sub>
           
         </div>
         <div>
@@ -84,8 +84,8 @@
     <!-- MENU mobile -->
     <div class="hidden menuMobile fixed inset-0 sm:hidden   bg-slate-100  z-10 flex justify-center flex-col items-center font-bold text-2xl text-yellow-500  ">
       <div class="absolute top-0 right-2 p-10">
-        <!-- <img src="close.svg" alt=""> -->
-        <svg class="btnCloseMenu text-yellow-900 hover:text-yellow-400 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+        <img class="btnCloseMenu" src="close.svg" alt="">
+<!--         <svg class=" btnCloseMenu text-yellow-900 hover:text-yellow-400 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg> -->
       </div>
       <a href="#acerca" class="acerca p-10 w-full text-center hover:bg-yellow-700 hover:text-white cursor-pointer">
         Nosotros
@@ -120,68 +120,57 @@
         
           
       </section>
-      
+
+
+
+      <!--SERVICIOS   -->
+
       <h2 id="servicios"  class="relative  text-yellow-500 font-bold text-3xl text-center mt-8">Servicios</h2>
 
 
-      <section class=" w-full px-3 md:h-screen md:grid  grid-cols-2  py-4 overflow-hidden">
-<!--         <div class="container relative grid grid-rows-rowSlider  m-auto overflow-hidden h-4/5 bg-slate-300 max-w-5xl">
+      <section class=" w-full px-3 lg:h-screen md:grid  grid-cols-3  py-4 overflow-hidden">
 
-          <div class="container_sliders m-auto grid grid-cols-[repeat(2,50%)] grid-flow-col h-full w-full">
-      
-            <div class="sliders_slider bg-slate-900">
-              <div class="">
-                <img src="https://placeimg.com/200/200/tech" alt="">
-              </div>
-            </div>
-            <div class="sliders_slider">
-              <div>
-                <img src="https://placeimg.com/200/200/tech" alt="">
-              </div>
-            </div>
-            <div class="sliders_slider">
-              <div>
-                <img src="https://placeimg.com/200/200/tech" alt="">
-              </div>
-            </div>
-          </div>
-            
+        <div class="  md:pt-8 col-span-1">
 
-          <div class="btns_sliders">
-            
-            <div class="btn_sliders btn_sliders-back"> - </div>
-            <div class="btn_sliders btn_sliders-next"> + </div>
-      
-          </div>
-      
-        </div> -->
+          <h3 class="text-center text-xl   ">Ofrecemos una variedad de servicios al cuidado de su cabello.</h3>
+          <div class=" md:pl-8">
+            <ul class="lg:pl-10 ">
+              <li class="text-xl">Cortes</li>
+                <li class="text-xl">Tintes</li>
+                <li class="text-xl">Rayitos</li>
+                <li class="text-xl">Mechitas</li>
+                <li class="text-xl">Iluminaciones</li>
+                <li class="text-xl">Peinados</li>
+                <li class="text-xl">Ondulaciones</li>
+                <li class="text-xl">Maquillaje</li>
+                <li class="text-xl">Pestaña 1x1</li>
+                <li class="text-xl">Pestañas pelo a pelo</li>
+                <li class="text-xl">Limpieza Facial</li>
+                <li class="text-xl">Depilación de Facial</li>
+                <li class="text-xl">Depilacíon Hindú</li>
+                <li class="text-xl">Manicure</li>
+                <li class="text-xl">Pedicure</li>
+                <li class="text-xl">Uñas acrilicas</li>
+                <li class="text-xl">podología</li>
+                <li class="text-xl">Laceado Japonés</li>
+                <li class="text-xl">Laceado Brasilero</li>
+                <li class="text-xl">Laceado Italiano,ETC</li>
 
-        <div class="p-4  md:pt-8">
-
-          <h3 class="text-center text-xl py-4 mt-5">Ofrecemos una variedad de servicios al cuidado de su cabello.</h3>
-          <div class="pl-8">
-            <ul class="md:pl-10">
-              <li class="text-xl">Corte de Barba</li>
-                <li class="text-xl">Taper Fade</li>
-                <li class="text-xl">Mid Fade</li>
-                <li class="text-xl">Low Fade</li>
-                <li class="text-xl">High Fade</li>
-                <li class="text-xl">Tenzas</li>
-                <li class="text-xl">manicura</li>
-                <li class="text-xl">pedicure</li>
 
               <li class="text-xl">y muchos mas....</li>
             </ul>
            </div>
           
         </div>
-        <div>
-          <div class="grid items-center  md:grid-cols-[repeat(2,50%)] md:grid-rows-[repeat(2,50%)] grid-cols-2 max-w-xl my-6 m-auto gap-3 place-content-center sm:p-16">
+        <div class="flex justify-center items-center col-span-2 h-full m-auto">
+          <div class="grid  items-center c md:grid-cols-[repeat(2,50%)] md:grid-rows-[repeat(2,50%)] lg:grid-cols-[repeat(3,33.33%)] lg:grid-rows-[repeat(2,50%)]  grid-cols-2 max-w-xl my-6  gap-3 place-content-center sm:p-1 md:p-8">
             
+            <img class="md:hidden lg:block h-full w-full m-auto" src="pestañas.jpg" alt="">
+            <img class=" lg:block h-full w-full m-auto" src="limpieza-cutis.jpg" alt="">
             <img class="h-full w-full m-auto" src="corte1.webp" alt="">
         
           
-            <img class="h-full m-auto" src="corte2.webp" alt="">
+            <img class="md:hidden h-full m-auto" src="corte2.webp" alt="">
           
             <img class="h-full m-auto" src="corte3.webp" alt="">
           
